@@ -1,0 +1,31 @@
+{
+  "service": {
+    "prefix": "service",
+    "body": [
+      "import { Provide } from '@midwayjs/decorator';",
+      "import { BaseRpcService, CoolRpcService } from '@cool-midway/rpc';",
+      "import { InjectEntityModel } from '@midwayjs/orm';",
+      "import { Repository } from 'typeorm';",
+      "",
+      "/**",
+      " * 描述",
+      " */",
+      "@Provide()",
+      "@CoolRpcService({",
+      "  entity: xxxEntity,",
+      "  method: ['add', 'delete', 'update', 'info', 'list', 'page'],",
+      "})",
+      "export class XxxService extends BaseRpcService {",
+      "  @InjectEntityModel(实体)",
+      "  xxxEntity: Repository<实体>;",
+      "",
+      "  /**",
+      "   * 描述",
+      "   */",
+      "  async xxx() {}",
+      "}",
+      ""
+    ],
+    "description": "cool-admin service代码片段"
+  }
+}
