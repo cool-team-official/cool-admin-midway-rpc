@@ -1,11 +1,10 @@
-import { EntityModel } from '@midwayjs/orm';
 import { BaseEntity } from '@cool-midway/core';
-import { Column } from 'typeorm';
+import { Column, Entity } from 'typeorm';
 
 /**
  * 商品
  */
-@EntityModel('demo_goods')
+@Entity('demo_goods')
 export class DemoGoodsEntity extends BaseEntity {
   @Column({ comment: '标题' })
   title: string;

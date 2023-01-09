@@ -3,7 +3,7 @@ import * as koa from '@midwayjs/koa';
 import * as info from '@midwayjs/info';
 import { join } from 'path';
 import * as cool from '@cool-midway/core';
-import * as orm from '@midwayjs/orm';
+import * as orm from '@midwayjs/typeorm';
 import * as rpc from '@cool-midway/rpc';
 
 @Configuration({

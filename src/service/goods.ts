@@ -4,10 +4,11 @@ import {
   CoolRpcService,
   CoolRpcTransaction,
 } from '@cool-midway/rpc';
-import { InjectEntityModel } from '@midwayjs/orm';
+import { InjectEntityModel } from '@midwayjs/typeorm';
 import { QueryRunner, Repository } from 'typeorm';
 import { DemoGoodsEntity } from '../entity/goods';
 import { CoolCommException } from '@cool-midway/core';
+// import { CoolCommException } from '@cool-midway/core';
 
 /**
  * 描述
@@ -36,6 +37,7 @@ export class DemoGoodsService extends BaseRpcService {
    */
   @CoolRpcTransaction()
   async transaction(params, rpcTransactionId?, queryRunner?: QueryRunner) {
+    console.log('获得的参数', params);
     const data = {
       title: '商品标题',
       pic: 'https://xxx',
