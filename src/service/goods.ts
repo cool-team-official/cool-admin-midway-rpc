@@ -1,4 +1,4 @@
-import { Provide } from '@midwayjs/decorator';
+import { Provide } from '@midwayjs/core';
 import {
   BaseRpcService,
   CoolRpcService,
@@ -26,7 +26,13 @@ export class DemoGoodsService extends BaseRpcService {
    */
   async test(params) {
     console.log(params);
-    return params;
+    await this.demoGoodsEntity.save({
+      title: '商品标题',
+      pic: 'https://xxx',
+      price: 99.0,
+      type: 1,
+    });
+    return await this.demoGoodsEntity.find();
   }
 
   /**

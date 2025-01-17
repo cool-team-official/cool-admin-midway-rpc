@@ -2,7 +2,7 @@
   "middleware": {
     "prefix": "middleware",
     "body": [
-      "import { Middleware } from '@midwayjs/decorator';",
+      "import { Middleware } from '@midwayjs/core';",
       "import { NextFunction, Context } from '@midwayjs/koa';",
       "import { IMiddleware } from '@midwayjs/core';",
       "",

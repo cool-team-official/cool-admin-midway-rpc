@@ -36,7 +36,7 @@ export default {
         host: '127.0.0.1',
         password: '',
         port: 6379,
-        db: 1,
+        db: 0,
       },
     },
     // 是否自动导入数据库

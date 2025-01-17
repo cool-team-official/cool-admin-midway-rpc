@@ -1,4 +1,4 @@
-import { Configuration, App } from '@midwayjs/decorator';
+import { Configuration, App } from '@midwayjs/core';
 import * as koa from '@midwayjs/koa';
 import * as info from '@midwayjs/info';
 import { join } from 'path';
