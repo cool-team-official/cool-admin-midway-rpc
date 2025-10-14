@@ -4,8 +4,8 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "@cool-midway/core": "file:/Users/ap/Documents/src/admin/midway-packages/core",
-    "@cool-midway/rpc": "file:/Users/ap/Documents/src/admin/midway-packages/rpc",
+    "@cool-midway/core": "^8.0.7",
+    "@cool-midway/rpc": "^8.0.1",
     "@midwayjs/bootstrap": "^3.20.0",
     "@midwayjs/core": "^3.20.0",
     "@midwayjs/info": "^3.20.0",
